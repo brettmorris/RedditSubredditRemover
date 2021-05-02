@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reddit Subreddit Remover</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        text-align: center;
+      }
+      button {
+        width: 130px;
+        height: 40px;
+        border-radius: 16px;
+        background-color: white;
+        color: #ff4400;
+        font-weight: 700;
+        margin-top: 16px;
+        cursor: pointer;
+        box-shadow: 2px 2px #888888;
+      }
+      button:hover {
+        background-color: #fff6f2;
+      }
+      #subreddit-remover-list li:hover {
+        background-color: #ff0000;
+      }
+      #subreddit-remover-list li {
+        cursor: pointer;
+        padding: 12px;
+        background-color: #ff4400;
+        border-radius: 16px;
+        text-align: center;
+        margin-top: 8px;
+        margin-left: -32px;
+        color: white;
+        font-weight: 700;
+      }
+      #input-description {
+        margin-top: 36px;
+      }
+      #name_textbox {
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div style="padding: 20px 20px 20px 20px;">
+        <h3>Reddit Subreddit Remover</h3>
+        <p>Hidden Subreddits</p>
+        <ul id="subreddit-remover-list"></ul>
+        <p id="input-description">Enter subreddit to hide.<br/> Names are case sensitive.</p>
+        <input id="name_textbox" placeholder="Example: Politics" />
+        <button id="add_btn" type="button">Add</button>
+    </div>
+
+  </body>
+</html>
